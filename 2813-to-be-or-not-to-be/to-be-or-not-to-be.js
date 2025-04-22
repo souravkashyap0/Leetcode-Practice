@@ -5,7 +5,7 @@
 var expect = function(val) {
     return ({
         toBe : function(newVal){
-            if(val===newVal){
+            if(val === newVal){
                 return true
             }
             throw new Error("Not Equal");
