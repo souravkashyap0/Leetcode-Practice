@@ -4,11 +4,12 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
+    let sumMap = new Map();
     for(let i=0;i<nums.length;i++){
-        for(let j=i+1;j<nums.length;j++){
-            if(nums[i]+nums[j]===target){
-                return [i,j];
-            }
+        let difference = target - nums[i];
+        if(sumMap.has(difference)){
+            return  [sumMap.get(difference),i];
         }
+        sumMap.set(nums[i],i);
     }
 };
