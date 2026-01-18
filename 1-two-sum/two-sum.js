@@ -4,12 +4,13 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    let sumMap = new Map();
-    for(let i=0;i<nums.length;i++){
-        let difference = target - nums[i];
-        if(sumMap.has(difference)){
-            return  [sumMap.get(difference),i];
+    let  twoSumMap = new Map();
+    for(let i =0;i<nums.length;i++){
+        let diff = target - nums[i];
+        if(twoSumMap.has(diff)){
+            return [twoSumMap.get(diff),i];
         }
-        sumMap.set(nums[i],i);
+        twoSumMap.set(nums[i],i);
     }
+    
 };
