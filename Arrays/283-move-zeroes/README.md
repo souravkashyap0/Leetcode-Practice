@@ -1,5 +1,5 @@
 <h2><a href="https://leetcode.com/problems/move-zeroes">Move Zeroes</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given an integer array <code>nums</code>, move all <code>0</code>&#39;s to the end of it while maintaining the relative order of the non-zero elements.</p>
-Array Two Pointers 
+<strong>Array</strong> <strong>Two Pointers</strong> 
 <p><strong>Note</strong> that you must do this in-place without making a copy of the array.</p>
 
 <p>&nbsp;</p>
