@@ -39,3 +39,30 @@
 
 <p>&nbsp;</p>
 <strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face="monospace">&nbsp;</font>time complexity?
+
+**Problem:** LeetCode #1 - Two Sum
+
+**Difficulty:** Easy
+
+**Topic:** Arrays & Hashing
+
+#### 1\. Brute Force Approach
+
+*   **Logic:** Use two nested loops to check every possible pair of numbers in the array. If their sum matches the target, return their indices.
+    
+*   **Analogy:** Like trying every single key on a keyring until one fits the lock.
+    
+*   **Time Complexity:** $O(n^2)$ — Since we have a loop inside another loop, the operations grow quadratically with the input size.
+    
+*   **Space Complexity:** $O(1)$ — We are not using any extra data structures to store information.
+    
+
+#### 2\. Optimized Approach (Hash Map)
+
+*   **Logic:** Traverse the array once. For each number, calculate its "match" ($target - currentNumber$). Check if this match is already in our "memory" (a JavaScript Map or Object). If yes, we found the pair. If no, store the current number and its index in the Map for future reference.
+    
+*   **Analogy:** Like walking into a party and asking, "Is the person I'm looking for here yet?" If not, you leave your name and number on the wall so they can find you when they arrive.
+    
+*   **Time Complexity:** $O(n)$ — We only traverse the list of $n$ elements once. Searching for a key in a Map is a constant time $O(1)$ operation.
+    
+*   **Space Complexity:** $O(n)$ — In the worst case, we might have to store almost all $n$ elements in the Map before finding a matc
